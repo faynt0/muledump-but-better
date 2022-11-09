@@ -1,3 +1,6 @@
+# To better understand this file read this:
+# https://docs.ionos.space/docs/github-actions-customization/
+
 name: Deploy Now
 
 on:
@@ -15,20 +18,19 @@ jobs:
           api-key: ${{ secrets.IONOS_API_KEY }}
           project: ${{ secrets.IONOS_PROJECT_ID }}
           service-host: api-eu.ionos.space
+
       - name: checkout
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
         uses: actions/checkout@v2
         with:
           submodules: 'recursive'
-      - name: Deploy build
+
+      - name: Deploy to IONOS
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
         uses: ionos-deploy-now/deploy-to-ionos-action@v1
         with:
-          api-key: ${{ secrets.IONOS_API_KEY }}
-          bootstrap-deploy: ${{ steps.project.outputs.bootstrap-deploy }}
-          branch-id: ${{ steps.project.outputs.branch-id }}
-          dist-folder: ./
           project: ${{ secrets.IONOS_PROJECT_ID }}
-          remote-host: ${{ steps.project.outputs.remote-host }}
+          branch-id: ${{ steps.project.outputs.branch-id }}
           service-host: api-eu.ionos.space
-          storage-quota: ${{ steps.project.outputs.storage-quota }}
+          api-key: ${{ secrets.IONOS_API_KEY }}
+          dist-folder: ./
