@@ -156,6 +156,22 @@ div#export div { padding: 0 5px; }
 
 .name, .error:not(.setuptools), .reload, #counter { font-weight: bold; }
 
+#vaults {
+    padding: 10px;
+}
+
+#vaults > span{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#vaults .list {
+    padding:5px 0;
+}
+
+#totals input {
+    margin-bottom: 10px;
+}
 .name {
     font-size: 16px;
     margin: 4px;

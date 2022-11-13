@@ -11,6 +11,7 @@
 	<link type="text/css" rel="stylesheet" href="lib/setuptools/css/setuptools.css">
 	<link type="image/png" rel="shortcut icon" href="lib/media/favicon.png">
 	<script type="application/javascript" src="vendor/jquery.min.js"></script>
+	<script type="application/javascript" src="vendor/list.min.js"></script>
 	<script type="application/javascript" src="vendor/masonry.pkgd.min.js"></script>
 	<script type="application/javascript" src="vendor/featherlight.min.js" charset="utf-8"></script>
 	<script type="application/javascript" src="vendor/seasalt.min.js"></script>
@@ -81,7 +82,10 @@
 		</div>
 	</div>
 	<div id="main">
-		<div id="totals" class="noselect" style="display: none;"><div class="noTotals">No matching data found for totals.</div></div>
+		<div id="totals" class="noselect" style="display: none;"><div class="noTotals">No matching data found for totals.</div>
+			<input class="search" placeholder="Search" />
+			<div class="list"></div>
+		</div>
 		<div id="stage"></div>
 		<div id="lightbox"></div>
 	</div>
