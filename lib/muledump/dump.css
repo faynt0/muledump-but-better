@@ -172,6 +172,11 @@ div#export div { padding: 0 5px; }
 #totals input {
     margin-bottom: 10px;
 }
+
+.seasonal {
+ color: #2e862e;
+}
+
 .name {
     font-size: 16px;
     margin: 4px;
