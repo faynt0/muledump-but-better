@@ -423,8 +423,12 @@ td.cont > div {
     display: inline-block;
 }
 
-table.chars {
+.chars {
     background-color: #333;
+    display: flex;
+    justify-content: left;
+    max-width: 100%;
+    flex-wrap: wrap;
 }
 
 .potions .itemsc {
