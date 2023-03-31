@@ -5,5 +5,6 @@ Prerequisite:
 Order:
 1. Run "node .\out\index.js" in root of rotmg-asset-ripper-main (maybe admin required)
 2. Copy "data" to webserver (my case xampp -> Muledump root)
+3. Remove "steamworksObjects.xml" from data/xml/ (it bugs lol)
 3. Run "./do_render.bat" in muledump-render-main
 4. Copy sheet, constants and render to muledump
