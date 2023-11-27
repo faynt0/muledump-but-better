@@ -268,13 +268,20 @@ hr {
 }
 
 .item:not(.silhouette) {
-   //background: url(../renders.png) #545454;
-   background: url(https://renders.muledump.com/renders.png) #545454;
+    background: url(https://renders.muledump.com/renders.png) #545454;
+
+    /*
+      background: url(../renders.png) #545454;
+
+   */
 }
 
 .item.transbackground {
-    //background: url(../renders.png);
+    /*
+    background: url(../renders.png);
+     */
     background: url(https://renders.muledump.com/renders.png);
+
 }
 
 .item.silhouette {
@@ -336,6 +343,19 @@ hr {
 .mp {
 	background-image: url(../media/mp.png);
 	margin: 0 4px 4px 2px;
+}
+
+.w100 .item div{
+    width: 100%;
+    height: 100%;
+    display: flex !important;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: white;
+    font: bold 15px Arial,sans-serif;
+    text-shadow: -1px 0 3px black, 0 1px 3px black, 1px 0 3px black, 0 -1px 3px black;
+    z-index: 50;
+
 }
 
 /* achievements etc */
