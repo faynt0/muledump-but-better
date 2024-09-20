@@ -268,19 +268,20 @@ hr {
 }
 
 .item:not(.silhouette) {
-    background: url(https://renders.muledump.com/renders.png) #545454;
+    background: url(../renders.png) #545454;
 
     /*
       background: url(../renders.png) #545454;
-
+      background: url(https://renders.muledump.com/renders.png) #545454;
    */
 }
 
 .item.transbackground {
     /*
     background: url(../renders.png);
+    background: url(https://renders.muledump.com/renders.png) #545454;
      */
-    background: url(https://renders.muledump.com/renders.png);
+    background: url(../renders.png);
 
 }
 
@@ -778,3 +779,10 @@ div.classstats > div.class {
     background-image: linear-gradient(#153a50, #163249, #162a41) !important;
 }
 
+.hidden {
+    display: none;
+}
+
+.mule-exalts table {
+    font-size: 16px;
+}

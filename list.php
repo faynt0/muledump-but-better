@@ -26,4 +26,4 @@ $result = file_get_contents($listUrl, false);
 if ($result === FALSE) {
     echo "list error";
 }
-print($result);
+print_r($result);
